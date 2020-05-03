@@ -1,115 +1,80 @@
 <ScrollView>
-    <GridLayout class="main-page-content">
-        <StackLayout [formGroup]="userprofileForm" class="home-panel">
-            <GridLayout class="m-15"
-                rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
-                <!-- Personal Information -->
-                <StackLayout row="1" class="division">
+    <GridLayout>
+        <StackLayout>
+            <GridLayout class="m-15" rows="auto auto auto auto auto auto auto">
+                <StackLayout row="1">
                     <GridLayout rows="auto, auto, auto, auto, auto">
-                        <StackLayout row="0" col="0" class="field-heading">
-                            <Label horizontalAlignment="left" text="Personal Information"></Label>
+                        <StackLayout row="0" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
                         </StackLayout>
-                        <GridLayout row="1" cols="auto" rows="auto, auto">
-                            <TextField required row="0" class="input-field" hint="First Name"></TextField>
-                        </GridLayout>
-                        <GridLayout row="2" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Last Name"></TextField>
-                        </GridLayout>
-                        <GridLayout row="3" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Birthday"(tap)="pickDate()"></TextField>
-                        </GridLayout>
-                        <GridLayout class="relative-picker" *ngIf="mode==='edit-relative'" row="5" cols="auto" rows="auto auto auto">
-                            <TextField required row="1" class="input-field" hint="Birthday"(tap)="pickDate()"></TextField>
-                        </GridLayout>
+                        <StackLayout row="1" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
+                        <StackLayout row="2" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
+                        <StackLayout row="3" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
+                        <StackLayout row="4" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </StackLayout>
+                <StackLayout row="2">
+                    <GridLayout rows="auto, auto, auto, auto, auto">
+                        <StackLayout row="0" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
+                        <StackLayout row="1" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
+                        <StackLayout row="2" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
+                        <StackLayout row="3" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
+                        <StackLayout row="4" col="0">
+                            <Label horizontalAlignment="left" text="text 1"></Label>
+                            <GridLayout row="2" cols="auto" rows="auto, auto">
+                                <TextField required row="1" hint="text 1"></TextField>
+                            </GridLayout>
+                        </StackLayout>
                     </GridLayout>
                 </StackLayout>
 
-                <StackLayout row="2" class="division">
-                    <GridLayout rows="auto, auto, auto, auto, auto">
-                        <StackLayout row="0" col="0" class="field-heading">
-                            <Label horizontalAlignment="left" text="Personal Information"></Label>
-                        </StackLayout>
-                        <GridLayout row="1" cols="auto" rows="auto, auto">
-                            <TextField required row="0" class="input-field" hint="First Name"></TextField>
-                        </GridLayout>
-                        <GridLayout row="2" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Last Name"></TextField>
-                        </GridLayout>
-                        <GridLayout row="3" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Birthday"(tap)="pickDate()"></TextField>
-                        </GridLayout>
-                        <GridLayout class="relative-picker" *ngIf="mode==='edit-relative'" row="5" cols="auto" rows="auto auto auto">
-                            <TextField required row="1" class="input-field" hint="Birthday"(tap)="pickDate()"></TextField>
-                        </GridLayout>
-                    </GridLayout>
-                </StackLayout>
-
-                <StackLayout row="3" class="division">
-                    <GridLayout rows="auto, auto, auto, auto, auto">
-                        <StackLayout row="0" col="0" class="field-heading">
-                            <Label horizontalAlignment="left" text="Personal Information"></Label>
-                        </StackLayout>
-                        <GridLayout row="1" cols="auto" rows="auto, auto">
-                            <TextField required row="0" class="input-field" hint="First Name"></TextField>
-                        </GridLayout>
-                        <GridLayout row="2" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Last Name"></TextField>
-                        </GridLayout>
-                        <GridLayout row="3" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Birthday"(tap)="pickDate()"></TextField>
-                        </GridLayout>
-                        <GridLayout class="relative-picker" *ngIf="mode==='edit-relative'" row="5" cols="auto" rows="auto auto auto">
-                            <TextField required row="1" class="input-field" hint="Birthday"(tap)="pickDate()"></TextField>
-                        </GridLayout>
-                    </GridLayout>
-                </StackLayout>
-
-                <StackLayout row="4" class="division">
-                    <GridLayout rows="auto, auto, auto, auto, auto">
-                        <StackLayout row="0" col="0" class="field-heading">
-                            <Label horizontalAlignment="left" text="Personal Information"></Label>
-                        </StackLayout>
-                        <GridLayout row="1" cols="auto" rows="auto, auto">
-                            <TextField required row="0" class="input-field" hint="First Name"></TextField>
-                        </GridLayout>
-                        <GridLayout row="2" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Last Name"></TextField>
-                        </GridLayout>
-                        <GridLayout row="3" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Birthday"(tap)="pickDate()"></TextField>
-                        </GridLayout>
-                        <GridLayout class="relative-picker" *ngIf="mode==='edit-relative'" row="5" cols="auto" rows="auto auto auto">
-                            <TextField required row="1" class="input-field" hint="Birthday"(tap)="pickDate()"></TextField>
-                        </GridLayout>
-                    </GridLayout>
-                </StackLayout>
-                <!-- Contact Information -->
-                <StackLayout row="5" class="division">
-                    <GridLayout rows="auto, auto, auto, auto, auto, auto, auto" cols="auto, auto">
-                        <StackLayout row="0" col="0" class="field-heading">
-                            <Label text="Contact Information"></Label>
-                        </StackLayout>
-                        <GridLayout row="1" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Phone"></TextField>
-                        </GridLayout>
-                        <GridLayout row="2" cols="auto" rows="auto, auto">
-                            <TextField required row="1" class="input-field" hint="Email"></TextField>
-                        </GridLayout>
-                    </GridLayout>
-                </StackLayout>
-                <StackLayout row="6">
-                    <Button class="button" [nsRouterLink]="['/address-list']" row="0" col="0" text="Addresses"></Button>
-                </StackLayout>
-                <!-- Health Information -->
-                <StackLayout row="7" class="division">
+                <StackLayout row="3">
                     <GridLayout rows="auto, auto, auto, auto, auto, auto" cols="auto, auto">
-                        <StackLayout row="0" col="0" class="field-heading">
-                            <Label text="Health Information"></Label>
-                        </StackLayout>
                         <GridLayout row="1" cols="auto" rows="auto, auto">
                             <GridLayout rows="*,auto" cols="auto, auto">
-
-
                                 <StackLayout tkExampleTitle tkToggleNavButton ios:backgroundColor="#CDCECE" padding="5">
                                     <Label text="Select country"></Label>
                                     <!-- >> angular-autocomplete-tokens-mode-html -->
@@ -125,24 +90,9 @@
                                     </RadAutoCompleteTextView>
                                     <!-- << angular-autocomplete-tokens-mode-html -->
                                 </StackLayout>
-
-
                             </GridLayout>
                         </GridLayout>
                     </GridLayout>
-                </StackLayout>
-                <!-- Address List -->
-                <!-- User Details Buttons -->
-                <StackLayout *ngIf="mode!=='edit-relative'" row="6" class="division">
-                    <GridLayout rows="auto, auto" cols="auto, auto">
-                        <Button *ngIf="mode==='edit'" class="cancel" row="0" col="0" horizontalAlignment="left"
-                            text="Cancel" (tap)="[fillUserDetails(),presetToken()]"></Button>
-                        <Button *ngIf="mode==='edit'" class="button" row="0" col="1" horizontalAlignment="right"
-                            width="30%" text="Save"
-                            (tap)="[saveUserData(),autoComplete.nativeElement.readOnly = true]"></Button>
-                    </GridLayout>
-
-
                 </StackLayout>
             </GridLayout>
         </StackLayout>
